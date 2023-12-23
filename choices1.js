@@ -4,11 +4,10 @@ function choices1(){
     let result_playor = 0;
     let result_robot = 0;
     let cartes = ["feu","eau","plante"];
-    let carte = ["feu"];
     while(tour < 3){
     tour++;
     let player = prompt("quelle carte voulez-vous envoyez? ("+cartes+"): " );
-    let adversary = carte[Math.floor(Math.random() * carte.length)];
+    let adversary = cartes[Math.floor(Math.random() * cartes.length)];
         console.log(adversary);
     
     if((player == "eau" && adversary == "feu") || (player == "plante" && adversary == "eau") || (player == "feu" && adversary == "plante")){
